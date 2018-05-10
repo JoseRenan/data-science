@@ -18,7 +18,6 @@ title = "Renan's Blog"
 publishDir = "docs"
 theme = "hugo-tranquilpeak-theme"
 paginate = 7
-canonifyurls = true
 
 [permalinks]
   post = "/:year/:month/:slug/"
