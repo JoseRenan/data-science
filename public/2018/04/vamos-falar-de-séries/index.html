@@ -1,0 +1,562 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.40.3 with theme Tranquilpeak 0.4.3-BETA">
+    <title>Vamos falar de séries?</title>
+    <meta name="author" content="José Renan">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+    <meta name="description" content="Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.">
+    <meta property="og:description" content="Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Vamos falar de séries?">
+    <meta property="og:url" content="/2018/04/vamos-falar-de-s%C3%A9ries/">
+    <meta property="og:site_name" content="Renan&#39;s Blog">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Renan&#39;s Blog">
+    <meta name="twitter:description" content="Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/89838c60a4771c882cbd0777d2a96cb8?s=640">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Renan&#39;s Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/89838c60a4771c882cbd0777d2a96cb8?s=90" alt="" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/89838c60a4771c882cbd0777d2a96cb8?s=110" alt="" />
+        </a>
+        <h4 class="sidebar-profile-name">José Renan</h4>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/joserenan">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/5744820">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Vamos falar de séries?
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-04-22T00:00:00Z">
+        
+   22, 2018
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <div id="analise-comparativa-das-series-american-idol-american-dad-e-mr-robot" class="section level1">
+<h1>Análise comparativa das séries American Idol, American Dad e Mr Robot</h1>
+<div id="qual-e-a-melhor-avaliada" class="section level3">
+<h3>Qual é a melhor avaliada?</h3>
+<p>Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções. Ou seja, olhando num contexto geral, Mr Robot foi um sucesso em todos os seus episódios, por outro lado American Idol aparentemente teve episódios distribuidas com mais de 50% deles aliados com notas muito baixas ou médias. American Dad, assim como Mr Robot, é uma série com episódios avaliados em notas bem próximas, porém quase 100% delas são abaixo das notas mais baixas de Mr Robot.</p>
+<p><img src="/post/lab1cp1_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="mas-sera-que-e-sempre-assim" class="section level3">
+<h3>Mas será que é sempre assim?</h3>
+<p>Analisando o gráfico de dispersão abaixo, podemos analisar 3 coisas muito importantes, a primeira delas é que American Dad e American Idol tem muito mais episódios que Mr Robot, fazendo com que as notas fiquem mais variadas ao longo dos episódios (e apareçam muitos outliers), a segunda coisa que é importante notar é que Mr Robot tem muito mais avaliações que as outras duas séries, fazendo com que nas outras a nota individual tenha um peso muito maior.</p>
+<p>Ainda com o gráfico abaixo, podemos perceber que a série American Idol tem um certo crescimento se observarmos que as notas acima de 5 no início da série são bem poucas bem como as abaixo de 6 nos ultimos episódios. Enquanto isso, em Mr Robot, vemos que a série possui altos e baixos, começa com uma avaliação incrível, cai um pouco, cresce novamente e é assim até o ultimo episódio, ao contrário de American Dad que se mantém praticamente na mesma faixa de notas durante todas as temporadas. Ainda analisando essa informação, podemos ver que de um episódio pro outro as notas são bem próximas na maioria dos casos, apesar de, por exemplo, notarmos uma diferença considerável quando comparamos o primeiro episódio de Mr Robot com o quarto, se compararmos o primeiro com o segundo vemos que não há tanta diferença assim, e isso se aplica às outras duas séries em boa parte dos episódios, apesar de algumas exceções notáveis.</p>
+<p><img src="/post/lab1cp1_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small"></span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/s%C3%A9ries/">Séries</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/imdb/">IMDB</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/american-idol/">American Idol</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/mr-robot/">Mr Robot</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/american-dad/">American Dad</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 José Renan. 
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml"></span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr"></span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+          <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+          <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+          <i class="fa fa-google-plus"></i><span>%!(EXTRA string=Google&#43;)</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/89838c60a4771c882cbd0777d2a96cb8?s=110" alt="" />
+    
+    <h4 id="about-card-name">José Renan</h4>
+    
+    
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center"></div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../">
+                <h3 class="media-heading">Um pouco mais de séries...</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">O número de votos de uma série interfere na sua avaliação geral? Como é calculado abaixo, podemos ver que não existe muita correlação entre o número de votos e a avaliação do episódio, nos levando a notar que, neste conjunto de dados, um episódio pode ter qualquer nota independente de quantas avaliações ele venha a ter.
+## # A tibble: 1 x 1 ## correlacao ## &lt;dbl&gt; ## 1 0.219  Existe um consenso nas notas das séries?</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/04/vamos-falar-de-s%C3%A9ries/">
+                <h3 class="media-heading">Vamos falar de séries?</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero=""
+         data-message-one=""
+         data-message-other="">
+         2 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+    
+  </body>
+</html>
+

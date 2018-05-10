@@ -1,0 +1,73 @@
+---
+title: "Um pouco mais de séries..."
+author: "José Renan"
+date: 2018-04-30
+tags: ["Séries", "IMDB", "Avaliações"]
+---
+
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE, include=FALSE}
+library(tidyverse)
+library(here)
+theme_set(theme_bw())
+```
+
+```{r, include=FALSE}
+data = read_csv(here("content/post/static/series_from_imdb.csv"), progress = FALSE,
+                    col_types = cols(.default = col_double(), 
+                                     series_name = col_character(), 
+                                     episode = col_character(), 
+                                     url = col_character(),
+                                     season = col_character()))
+```
+
+
+## O número de votos de uma série interfere na sua avaliação geral?
+
+Como é calculado abaixo, podemos ver que não existe muita correlação entre o número de votos e a avaliação do episódio, nos levando a notar que, neste conjunto de dados, um episódio pode ter qualquer nota independente de quantas avaliações ele venha a ter.
+
+```{r, echo=FALSE}
+data %>% 
+    summarise(correlacao = cor(user_rating, user_votes))
+```
+
+```{r, include=FALSE}
+data_long = data %>%
+    group_by(series_name) %>% 
+    summarize_at(vars(r1:r10), funs(mean)) %>% 
+    gather("rating", "proporcao", 2:11)
+```
+
+```{r, include=FALSE}
+data_consenso = data_long %>%
+    group_by(series_name) %>% 
+    summarize_at(vars(proporcao), funs(var))
+```
+
+
+## Existe um consenso nas notas das séries?
+
+No boxplot abaixo foi calculada a variância da proporção de pessoas que deram cada nota de cada série, ou seja, quanto maior a variancia, maior o consenso em uma nota e vice-versa. Podemos notar no gráfico que mais de 75% das ocorrencias estão abaixo de 0.02, porém na prática, o quanto essa variancia representa de consenso? No próximo ponto veremos que existem grupos de consenso e que a variancia pode indicar que existe uma nota com muitas ocorrencias ou um grupo de notas com muitas ocorrencias.
+
+```{r, echo=FALSE}
+data_consenso %>%
+    ggplot(aes(y = proporcao, x=factor(0))) + 
+      geom_boxplot() +
+      labs(x = "", y = "Variancia da proporção de usuários para cada nota")
+```
+
+## Grupos de consenso
+
+Como foi dito anteriormente, algumas séries apresentam um consenso, digamos que, mais forte que outras. No gráfico abaixo mostro um exemplo de série com variancia muito próxima de zero (Agents of S.H.I.E.L.D), uma com variância próxima de 0.02 (Mr Robot) e uma com variancia acima de 0.05 (Super Girl). Podemos perceber que quanto mais próximo de zero, maior o grupo de consenso, por exemplo, em Agents of Shield, as notas estão muito bem espalhadas enquanto em Super Girl temos uma grande maioria de notas como 10. Em Mr Robot vemos um grupo acima de notas 8 que detém maioria das notas.
+
+```{r, echo=FALSE}
+data_long %>%
+    filter(series_name %in% c("Mr Robot", "Marvel: Agents Of S.H.I.E.L.D", "Super Girl")) %>% 
+    ggplot(aes(x = series_name, y = rating, color = series_name, size = proporcao)) + 
+      geom_point(stat = "identity")
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

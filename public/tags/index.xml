@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Renan&#39;s Blog</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Renan&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>American Dad</title>
+      <link>/tags/american-dad/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/american-dad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>American Idol</title>
+      <link>/tags/american-idol/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/american-idol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Avaliações</title>
+      <link>/tags/avalia%C3%A7%C3%B5es/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/avalia%C3%A7%C3%B5es/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imdb</title>
+      <link>/tags/imdb/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/imdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mr Robot</title>
+      <link>/tags/mr-robot/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mr-robot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Séries</title>
+      <link>/tags/s%C3%A9ries/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/s%C3%A9ries/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
