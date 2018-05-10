@@ -34,7 +34,7 @@
     <meta property="og:description" content="Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Vamos falar de séries?">
-    <meta property="og:url" content="/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+    <meta property="og:url" content="/2018/04/vamos-falar-de-s%C3%A9ries/">
     <meta property="og:site_name" content="Renan&#39;s Blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Renan&#39;s Blog">
@@ -76,7 +76,7 @@
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="/data-science/">Renan&#39;s Blog</a>
+    <a class="header-title-link" href="/">Renan&#39;s Blog</a>
   </div>
   
     
@@ -108,7 +108,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science">
+      <a class="sidebar-button-link " href="/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
@@ -118,7 +118,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science/categories">
+      <a class="sidebar-button-link " href="/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
@@ -128,7 +128,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science/tags">
+      <a class="sidebar-button-link " href="/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
@@ -138,7 +138,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science/archives">
+      <a class="sidebar-button-link " href="/archives">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
@@ -148,7 +148,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science/#about">
+      <a class="sidebar-button-link " href="/#about">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
@@ -162,7 +162,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://github.com/joserenan" target="_blank" rel="noopener">
+      <a class="sidebar-button-link " href="https://github.com/joserenan">
     
       <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       
@@ -172,7 +172,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://stackoverflow.com/users/5744820" target="_blank" rel="noopener">
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/5744820">
     
       <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
       
@@ -186,7 +186,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="/data-science/index.xml">
+      <a class="sidebar-button-link " href="/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -235,13 +235,13 @@
 <div id="qual-e-a-melhor-avaliada" class="section level3">
 <h3>Qual é a melhor avaliada?</h3>
 <p>Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções. Ou seja, olhando num contexto geral, Mr Robot foi um sucesso em todos os seus episódios, por outro lado American Idol aparentemente teve episódios distribuidas com mais de 50% deles aliados com notas muito baixas ou médias. American Dad, assim como Mr Robot, é uma série com episódios avaliados em notas bem próximas, porém quase 100% delas são abaixo das notas mais baixas de Mr Robot.</p>
-<p><img src="/data-science/post/lab1cp1_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/post/lab1cp1_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 <div id="mas-sera-que-e-sempre-assim" class="section level3">
 <h3>Mas será que é sempre assim?</h3>
 <p>Analisando o gráfico de dispersão abaixo, podemos analisar 3 coisas muito importantes, a primeira delas é que American Dad e American Idol tem muito mais episódios que Mr Robot, fazendo com que as notas fiquem mais variadas ao longo dos episódios (e apareçam muitos outliers), a segunda coisa que é importante notar é que Mr Robot tem muito mais avaliações que as outras duas séries, fazendo com que nas outras a nota individual tenha um peso muito maior.</p>
 <p>Ainda com o gráfico abaixo, podemos perceber que a série American Idol tem um certo crescimento se observarmos que as notas acima de 5 no início da série são bem poucas bem como as abaixo de 6 nos ultimos episódios. Enquanto isso, em Mr Robot, vemos que a série possui altos e baixos, começa com uma avaliação incrível, cai um pouco, cresce novamente e é assim até o ultimo episódio, ao contrário de American Dad que se mantém praticamente na mesma faixa de notas durante todas as temporadas. Ainda analisando essa informação, podemos ver que de um episódio pro outro as notas são bem próximas na maioria dos casos, apesar de, por exemplo, notarmos uma diferença considerável quando comparamos o primeiro episódio de Mr Robot com o quarto, se compararmos o primeiro com o segundo vemos que não há tanta diferença assim, e isso se aplica às outras duas séries em boa parte dos episódios, apesar de algumas exceções notáveis.</p>
-<p><img src="/data-science/post/lab1cp1_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="/post/lab1cp1_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 </div>
 
@@ -277,7 +277,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml"></span>
@@ -303,19 +303,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -353,7 +353,7 @@
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../" data-tooltip="Um pouco mais de séries...">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml"></span>
@@ -379,19 +379,19 @@
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/vamos-falar-de-s%C3%A9ries/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -415,19 +415,19 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2Fdata-science%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
           <i class="fa fa-facebook-official"></i><span>%!(EXTRA string=Facebook)</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2Fdata-science%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
           <i class="fa fa-twitter"></i><span>%!(EXTRA string=Twitter)</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2Fdata-science%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2018%2F04%2Fvamos-falar-de-s%25C3%25A9ries%2F">
           <i class="fa fa-google-plus"></i><span>%!(EXTRA string=Google&#43;)</span>
         </a>
       </li>
@@ -474,7 +474,7 @@
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../">
+              <a class="link-unstyled" href="/2018/04/um-pouco-mais-de-s%C3%A9ries.../">
                 <h3 class="media-heading">Um pouco mais de séries...</h3>
               </a>
               <span class="media-meta">
@@ -492,7 +492,7 @@
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/data-science/2018/04/vamos-falar-de-s%C3%A9ries/">
+              <a class="link-unstyled" href="/2018/04/vamos-falar-de-s%C3%A9ries/">
                 <h3 class="media-heading">Vamos falar de séries?</h3>
               </a>
               <span class="media-meta">
@@ -521,7 +521,7 @@
     
   
     
-    <div id="cover" style="background-image:url('/data-science/images/cover.jpg');"></div>
+    <div id="cover" style="background-image:url('/images/cover.jpg');"></div>
   
 
 
