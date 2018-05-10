@@ -3,75 +3,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/04/um-pouco-mais-de-s%C3%A9ries.../</loc>
+    <loc>/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../</loc>
     <lastmod>2018-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2018/04/vamos-falar-de-s%C3%A9ries/</loc>
+    <loc>/data-science/2018/04/vamos-falar-de-s%C3%A9ries/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/american-dad/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/american-idol/</loc>
+    <loc>/data-science/tags/american-dad/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/archives/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/avalia%C3%A7%C3%B5es/</loc>
-    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/imdb/</loc>
-    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mr-robot/</loc>
+    <loc>/data-science/tags/american-idol/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/data-science/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data-science/tags/avalia%C3%A7%C3%B5es/</loc>
     <lastmod>2018-04-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/data-science/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data-science/tags/imdb/</loc>
     <lastmod>2018-04-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/s%C3%A9ries/</loc>
+    <loc>/data-science/tags/mr-robot/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data-science/post/</loc>
     <lastmod>2018-04-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/data-science/</loc>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data-science/tags/s%C3%A9ries/</loc>
+    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/data-science/tags/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

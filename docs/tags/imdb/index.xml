@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Imdb on Renan&#39;s Blog</title>
-    <link>/tags/imdb/</link>
+    <link>/data-science/tags/imdb/</link>
     <description>Recent content in Imdb on Renan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/imdb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/data-science/tags/imdb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Um pouco mais de séries...</title>
-      <link>/2018/04/um-pouco-mais-de-s%C3%A9ries.../</link>
+      <link>/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/04/um-pouco-mais-de-s%C3%A9ries.../</guid>
+      <guid>/data-science/2018/04/um-pouco-mais-de-s%C3%A9ries.../</guid>
       <description>O número de votos de uma série interfere na sua avaliação geral? Como é calculado abaixo, podemos ver que não existe muita correlação entre o número de votos e a avaliação do episódio, nos levando a notar que, neste conjunto de dados, um episódio pode ter qualquer nota independente de quantas avaliações ele venha a ter.
 ## # A tibble: 1 x 1 ## correlacao ## &amp;lt;dbl&amp;gt; ## 1 0.219  Existe um consenso nas notas das séries?</description>
     </item>
     
     <item>
       <title>Vamos falar de séries?</title>
-      <link>/2018/04/vamos-falar-de-s%C3%A9ries/</link>
+      <link>/data-science/2018/04/vamos-falar-de-s%C3%A9ries/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/04/vamos-falar-de-s%C3%A9ries/</guid>
+      <guid>/data-science/2018/04/vamos-falar-de-s%C3%A9ries/</guid>
       <description>Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.</description>
     </item>
     
