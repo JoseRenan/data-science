@@ -13,7 +13,7 @@ theme_set(theme_bw())
 ```
 
 ```{r, include=FALSE}
-data = read_csv(here("content/post/static/series_from_imdb.csv"), progress = FALSE,
+data = read_csv(here("/data/series_from_imdb.csv"), progress = FALSE,
                     col_types = cols(.default = col_double(), 
                                      series_name = col_character(), 
                                      episode = col_character(), 
