@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>American Idol on Renan&#39;s Blog</title>
-    <link>/tags/american-idol/</link>
+    <link>https://joserenan.github.io/data-science/tags/american-idol/</link>
     <description>Recent content in American Idol on Renan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/american-idol/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joserenan.github.io/data-science/tags/american-idol/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Vamos falar de séries v2</title>
+      <link>https://joserenan.github.io/data-science/2018/05/vamos-falar-de-s%C3%A9ries-v2/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://joserenan.github.io/data-science/2018/05/vamos-falar-de-s%C3%A9ries-v2/</guid>
+      <description>Toda série tem seus altos e baixos, algumas começam entediantes e vão melhorando ao se aproximar do fim, outras começam muito boas e vão ficando entediantes ao longo do tempo… Listamos 3 séries no gráfico abaixo e conseguimos algumas conclusões baseada nas avaliações dos episódios ao decorrer da série.
+O gráfico abaixo mostra dados das séries American Idol, American Dad e Mr Robot. Com ele podemos ver que as 3 séries possuem um comportamento diferente quanto às avaliações.</description>
+    </item>
+    
+    <item>
       <title>Vamos falar de séries?</title>
-      <link>/2018/04/vamos-falar-de-s%C3%A9ries/</link>
+      <link>https://joserenan.github.io/data-science/2018/04/vamos-falar-de-s%C3%A9ries/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/2018/04/vamos-falar-de-s%C3%A9ries/</guid>
+      <guid>https://joserenan.github.io/data-science/2018/04/vamos-falar-de-s%C3%A9ries/</guid>
       <description>Análise comparativa das séries American Idol, American Dad e Mr Robot Qual é a melhor avaliada? Analisando os boxplots das avaliações dos episódios das séries Mr Robot, American Idol e American Dad, vemos que a série Mr Robot possui um range de avaliações bem mais agrupado acima da nota 8, mostrando que todos os episódios foram extremamente bem avaliados sem exceções. Ao compararmos as outras séries, percebemos um range de notas bem maior com notas inferiores às de Mr Robot, salvo raras exceções.</description>
     </item>
     

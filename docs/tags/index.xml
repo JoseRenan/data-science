@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Renan&#39;s Blog</title>
-    <link>/tags/</link>
+    <link>https://joserenan.github.io/data-science/tags/</link>
     <description>Recent content in Tags on Renan&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joserenan.github.io/data-science/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>American Dad</title>
-      <link>/tags/american-dad/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://joserenan.github.io/data-science/tags/american-dad/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/american-dad/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/american-dad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>American Idol</title>
-      <link>/tags/american-idol/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://joserenan.github.io/data-science/tags/american-idol/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/american-idol/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/american-idol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Avaliações</title>
-      <link>/tags/avalia%C3%A7%C3%B5es/</link>
+      <link>https://joserenan.github.io/data-science/tags/avalia%C3%A7%C3%B5es/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/avalia%C3%A7%C3%B5es/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/avalia%C3%A7%C3%B5es/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Imdb</title>
-      <link>/tags/imdb/</link>
-      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://joserenan.github.io/data-science/tags/imdb/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/imdb/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/imdb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mr Robot</title>
-      <link>/tags/mr-robot/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://joserenan.github.io/data-science/tags/mr-robot/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/mr-robot/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/mr-robot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Séries</title>
-      <link>/tags/s%C3%A9ries/</link>
-      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      <link>https://joserenan.github.io/data-science/tags/s%C3%A9ries/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/s%C3%A9ries/</guid>
+      <guid>https://joserenan.github.io/data-science/tags/s%C3%A9ries/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,36 @@
+---
+title: "Vamos falar de séries v2"
+author: "José Renan"
+date: 2018-05-22
+tags: ["Séries", "IMDB", "American Idol", "Mr Robot", "American Dad"]
+---
+
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(here)
+library(plotly)
+theme_set(theme_bw())
+```
+
+```{r, echo=FALSE}
+data = read_csv(here("/data/series_from_imdb.csv"), progress = FALSE,
+                    col_types = cols(.default = col_double(), 
+                                     series_name = col_character(), 
+                                     episode = col_character(), 
+                                     url = col_character(),
+                                     season = col_character()))
+```
+
+Toda série tem seus altos e baixos, algumas começam entediantes e vão melhorando ao se aproximar do fim, outras começam muito boas e vão ficando entediantes ao longo do tempo... Listamos 3 séries no gráfico abaixo e conseguimos algumas conclusões baseada nas avaliações dos episódios ao decorrer da série.
+
+O gráfico abaixo mostra dados das séries American Idol, American Dad e Mr Robot. Com ele podemos ver que as 3 séries possuem um comportamento diferente quanto às avaliações. Para a série American Idol vemos que a série começa com avaliações baixíssimas nos primeiros episódios e vai crescendo ao se aproximar do fim. Na minha opinião esse comportamento se dá pelo fato de ser um reality show que vai tendo seus momentos de maior empolgação nas fases finais. Já na animação American Dad, nós temos uma média de avaliações que se mantem ao longo de toda série, com alguns pontos fora da curva como o episódio 9 da season 5 ou o episódio 14 da season 10 que estão completamente fora do range normal de avaliações da série. Isso pode ocorrer por se tratar de uma série animada que possuem episódios independentes um do outro, ou seja, os episódios não são uma sequencia de fatos que culminam em algo, o que ajuda a manter a nota sempre na mesma média, com alguns que podem ser excepcionalmente muito melhores que os outros ou com a qualidade muito menor que o esperado, o que é completamente diferente da série Mr Robot, que possui suas notas em um padrão ondulado, com seu primeiro episódio muito bem avaliado seguida de uma queda nas avaliações e depois de uma outra subida para um ápice que resultou em outra queda novamente... e assim sucessivamente. Ao analisar o gráfico, podemos ver que os episódios de ápice se encontram na segunda metade da série, próxima aos season finales, o que nos leva a supor que esse comportamento se dá pela sequencia de fatos proposta pela série e a culminação em um ponto que não é observado em American Dad.
+
+```{r, echo=FALSE}
+data %>%
+    filter(series_name %in% c("Mr Robot", "American Idol", "American Dad")) %>%
+    group_by(series_name) %>% 
+    mutate(conclusao_serie = (series_ep / max(series_ep)) * 100) %>%
+    plot_ly(x = ~conclusao_serie, y = ~user_rating, colors =  c("orange", "purple", "green"), text = ~paste("Season: ", season, ' Episode:', season_ep)) %>%
+        add_markers(size = ~user_votes, color = ~series_name) %>%
+        layout(yaxis = list(title = "Avaliação do público"), xaxis = list(title = "% Conclusão da série"))
+```
