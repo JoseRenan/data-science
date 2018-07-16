@@ -1,0 +1,75 @@
+---
+title: "Vamos falar de filmes?"
+author: "José Renan"
+date: 2018-07-15
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(here)
+library(boot)
+library(chron)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, echo=FALSE}
+movies = read_csv(here("/data/movie_lens/movies.csv"))
+ratings = read_csv(here("/data/movie_lens/ratings.csv"))
+tags = read_csv(here("/data/movie_lens/tags.csv"))
+```
+
+```{r}
+substrYear <- function(x){
+  substr(x, nchar(x)-4, nchar(x)-1)
+}
+
+movies = movies %>%
+  mutate(year = as.numeric(substrYear(title)))
+```
+
+
+```{r}
+hp_movies = movies %>%
+  filter(grepl("Harry Potter", title))
+
+hp_movies_id = hp_movies %>%
+  pull(movieId)
+
+hp_ids_after_fourth = hp_movies %>%
+  filter(year > 2005) %>%
+  pull(movieId)
+
+ratings_hp = ratings %>% 
+  filter(movieId %in% hp_movies_id)
+
+ratings_hp = ratings_hp %>%
+  mutate(afterFourth = (movieId %in% hp_ids_after_fourth))
+```
+
+```{r}
+set.seed(1234)
+
+bootstrap_hp_movies <- function(data, indexes){
+    d = data %>% 
+      slice(indexes) %>%
+      group_by(afterFourth) %>% 
+      summarise(meanRating = median(rating)) %>%
+      pull(meanRating)
+    return((d[1] - d[2]))
+}
+
+bootstraps = ratings_hp %>% 
+  boot(statistic = bootstrap_hp_movies, R = 2000)
+```
+
+```{r}
+tibble(estatistica = as.double(bootstraps$t)) %>% 
+  ggplot(aes(x = estatistica)) + 
+  geom_histogram(binwidth = 0.001, fill = "white", color = "black")
+boot.ci(bootstraps, conf = 0.95, type = "basic")
+```
+
+
+
